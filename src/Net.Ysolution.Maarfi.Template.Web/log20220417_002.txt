@@ -1,0 +1,57 @@
+2022-04-17 01:18:36.262 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 01:18:55.908 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 01:18:57.407 +02:00 [INF] Executed DbCommand (170ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 01:18:57.615 +02:00 [INF] Executed DbCommand (182ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 01:18:57.764 +02:00 [INF] Executed DbCommand (145ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 01:18:57.909 +02:00 [INF] Executed DbCommand (144ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 01:18:58.095 +02:00 [INF] Executed DbCommand (145ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-04-17 01:18:58.148 +02:00 [INF] Applying migration '20220416231836_MyFirstMigration'.
+2022-04-17 01:18:58.588 +02:00 [INF] Executed DbCommand (150ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF SCHEMA_ID(N'admin') IS NULL EXEC(N'CREATE SCHEMA [admin];');
+2022-04-17 01:18:58.739 +02:00 [INF] Executed DbCommand (149ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [admin].[com_users] (
+    [Id] int NOT NULL IDENTITY,
+    [FirstName] nvarchar(100) NOT NULL,
+    [LastName] nvarchar(100) NOT NULL,
+    [Username] nvarchar(max) NOT NULL,
+    [Email] nvarchar(100) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_com_users] PRIMARY KEY ([Id])
+);
+2022-04-17 01:18:58.893 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [admin].[Projects] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(100) NOT NULL,
+    [Priority] int NOT NULL,
+    [Creator] nvarchar(max) NOT NULL,
+    [Created] datetime2 NOT NULL,
+    [Changer] nvarchar(max) NULL,
+    [Changed] datetime2 NULL,
+    CONSTRAINT [PK_Projects] PRIMARY KEY ([Id])
+);
+2022-04-17 01:18:59.048 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [admin].[ToDoItems] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [IsDone] bit NOT NULL,
+    [ProjectId] int NULL,
+    [Creator] nvarchar(max) NOT NULL,
+    [Created] datetime2 NOT NULL,
+    [Changer] nvarchar(max) NULL,
+    [Changed] datetime2 NULL,
+    CONSTRAINT [PK_ToDoItems] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ToDoItems_Projects_ProjectId] FOREIGN KEY ([ProjectId]) REFERENCES [admin].[Projects] ([Id])
+);
+2022-04-17 01:18:59.195 +02:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ToDoItems_ProjectId] ON [admin].[ToDoItems] ([ProjectId]);
+2022-04-17 01:18:59.342 +02:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220416231836_MyFirstMigration', N'6.0.3');

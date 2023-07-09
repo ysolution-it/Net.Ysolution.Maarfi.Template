@@ -1,0 +1,26 @@
+2022-04-17 01:05:05.962 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 01:06:48.268 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 01:09:36.392 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 01:16:00.444 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 01:17:09.171 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 01:17:10.727 +02:00 [INF] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 01:17:10.949 +02:00 [INF] Executed DbCommand (193ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 01:17:11.103 +02:00 [INF] Executed DbCommand (152ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 01:17:11.438 +02:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2022-04-17 01:17:11.598 +02:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 01:17:11.754 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 01:17:11.914 +02:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-04-17 01:17:11.968 +02:00 [INF] No migrations were applied. The database is already up to date.

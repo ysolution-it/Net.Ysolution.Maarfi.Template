@@ -1,0 +1,48 @@
+2022-08-08 02:41:35.757 +02:00 [INF] Now listening on: http://localhost:57679
+2022-08-08 02:41:35.871 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-08 02:41:35.873 +02:00 [INF] Hosting environment: Development
+2022-08-08 02:41:35.876 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-08-08 02:41:37.826 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-08-08 02:41:39.189 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 1375.8479ms
+2022-08-08 02:41:39.234 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-08-08 02:41:39.258 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 23.8982ms
+2022-08-08 02:41:39.319 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-08-08 02:41:39.607 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 287.6365ms
+2022-08-08 02:41:39.936 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-08-08 02:41:40.856 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 919.8430ms
+2022-08-08 04:04:37.706 +02:00 [INF] Now listening on: http://localhost:57679
+2022-08-08 04:04:37.765 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-08 04:04:37.767 +02:00 [INF] Hosting environment: Development
+2022-08-08 04:04:37.768 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-08-08 04:04:40.223 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-08-08 04:04:40.862 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 649.3297ms
+2022-08-08 04:04:40.933 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-08-08 04:04:40.939 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-08-08 04:04:40.942 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 2.7708ms
+2022-08-08 04:04:41.047 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 114.7401ms
+2022-08-08 04:04:41.277 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-08-08 04:04:42.121 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 843.5056ms
+2022-08-08 16:52:32.069 +02:00 [INF] Now listening on: http://localhost:57679
+2022-08-08 16:52:32.110 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-08 16:52:32.112 +02:00 [INF] Hosting environment: Development
+2022-08-08 16:52:32.114 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-08-08 16:52:33.658 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-08-08 16:52:34.445 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 797.4358ms
+2022-08-08 16:52:34.487 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-08-08 16:52:34.507 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-08-08 16:52:34.517 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 10.4462ms
+2022-08-08 16:52:34.536 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.4241ms
+2022-08-08 16:52:34.709 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-08-08 16:52:35.240 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 531.3257ms
+2022-08-08 17:07:53.119 +02:00 [INF] Now listening on: http://localhost:57679
+2022-08-08 17:07:53.369 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-08 17:07:53.373 +02:00 [INF] Hosting environment: Development
+2022-08-08 17:07:53.375 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-08-08 17:07:54.906 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-08-08 17:07:55.653 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 748.7067ms
+2022-08-08 17:07:55.684 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-08-08 17:07:55.688 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-08-08 17:07:55.692 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 3.4822ms
+2022-08-08 17:07:55.769 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.2902ms
+2022-08-08 17:07:56.326 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-08-08 17:07:57.108 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 781.6811ms

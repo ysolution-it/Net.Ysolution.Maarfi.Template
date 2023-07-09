@@ -1,0 +1,48 @@
+2022-09-07 23:20:38.039 +02:00 [INF] Now listening on: http://localhost:57679
+2022-09-07 23:20:38.111 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-07 23:20:38.115 +02:00 [INF] Hosting environment: Development
+2022-09-07 23:20:38.118 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-09-07 23:20:40.376 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger - -
+2022-09-07 23:20:40.725 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger - - - 301 0 - 354.0004ms
+2022-09-07 23:20:40.789 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-09-07 23:20:41.340 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - -
+2022-09-07 23:20:41.349 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 560.0561ms
+2022-09-07 23:20:41.377 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-standalone-preset.js - -
+2022-09-07 23:20:41.381 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-09-07 23:20:41.384 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-09-07 23:20:41.393 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-09-07 23:20:41.397 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 16.4232ms
+2022-09-07 23:20:41.399 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - - - 200 143943 text/css 58.8298ms
+2022-09-07 23:20:41.412 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-09-07 23:20:41.425 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-bundle.js - -
+2022-09-07 23:20:41.434 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 56.9025ms
+2022-09-07 23:20:41.470 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-09-07 23:20:41.473 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 48.2136ms
+2022-09-07 23:20:41.530 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 148.0323ms
+2022-09-07 23:20:41.870 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-09-07 23:20:42.006 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/favicon-32x32.png - -
+2022-09-07 23:20:42.009 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-09-07 23:20:42.015 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/favicon-32x32.png - - - 200 628 image/png 9.1227ms
+2022-09-07 23:20:42.935 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1065.0260ms
+2022-09-07 23:32:47.159 +02:00 [INF] Now listening on: http://localhost:57679
+2022-09-07 23:32:47.210 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-07 23:32:47.212 +02:00 [INF] Hosting environment: Development
+2022-09-07 23:32:47.213 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-09-07 23:32:49.866 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-09-07 23:32:50.979 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 1124.6155ms
+2022-09-07 23:32:51.075 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-09-07 23:32:51.143 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-09-07 23:32:51.194 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 50.4716ms
+2022-09-07 23:32:51.368 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 292.5671ms
+2022-09-07 23:45:15.679 +02:00 [INF] Now listening on: http://localhost:57679
+2022-09-07 23:45:15.717 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-07 23:45:15.721 +02:00 [INF] Hosting environment: Development
+2022-09-07 23:45:15.723 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-09-07 23:45:16.755 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-09-07 23:45:17.605 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 856.5218ms
+2022-09-07 23:45:17.640 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-09-07 23:45:17.681 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-09-07 23:45:17.693 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12036 application/javascript;+charset=utf-8 11.8944ms
+2022-09-07 23:45:17.840 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 200.1834ms
+2022-09-07 23:45:18.275 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-09-07 23:45:19.058 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 782.6979ms

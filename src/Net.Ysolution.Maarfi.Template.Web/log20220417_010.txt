@@ -1,0 +1,63 @@
+2022-04-17 16:19:22.858 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 16:19:23.026 +02:00 [INF] Executed DbCommand (149ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 16:19:23.272 +02:00 [INF] Executed DbCommand (236ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2022-04-17 16:19:23.567 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 16:19:25.733 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [admin].[ToDoItems] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-04-17 16:19:25.891 +02:00 [INF] User profile is available. Using 'C:\Users\KhaledFathy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-17 16:19:26.508 +02:00 [INF] Now listening on: http://localhost:57679
+2022-04-17 16:19:26.580 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-17 16:19:26.588 +02:00 [INF] Hosting environment: Development
+2022-04-17 16:19:26.593 +02:00 [INF] Content root path: G:\source\maarfi\backend\Net.Ysolution.Maarfi\Modules\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-04-17 16:19:29.535 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-04-17 16:19:30.694 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 1182.1359ms
+2022-04-17 16:19:30.785 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-04-17 16:19:30.814 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 28.4740ms
+2022-04-17 16:19:32.096 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-04-17 16:19:32.678 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 582.3115ms
+2022-04-17 16:19:55.569 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/api/User?userId=jjkjk - -
+2022-04-17 16:19:55.636 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-04-17 16:19:55.642 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 16:19:55.701 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Net.Ysolution.Admin.Web.ApiModels.GenericVM`1[Net.Ysolution.Maarfi.Template.Core.UserAggregate.User]] GetUserById(System.String) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-04-17 16:19:55.784 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 16:19:56.218 +02:00 [INF] Executed DbCommand (217ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[Username]
+FROM [admin].[com_users] AS [c]
+WHERE [c].[Id] = @__p_0
+2022-04-17 16:19:56.271 +02:00 [INF] Executing ObjectResult, writing value of type 'Net.Ysolution.Admin.Web.ApiModels.GenericVM`1[[Net.Ysolution.Maarfi.Template.Core.UserAggregate.User, Net.Ysolution.Maarfi.Template.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-04-17 16:19:56.486 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 766.0352ms
+2022-04-17 16:19:56.493 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 16:19:56.503 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/api/User?userId=jjkjk - - - 200 53 application/json;+charset=utf-8 934.2328ms
+2022-04-17 16:21:48.915 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/api/User?userId=5 - -
+2022-04-17 16:21:48.919 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 16:21:48.921 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Net.Ysolution.Admin.Web.ApiModels.GenericVM`1[Net.Ysolution.Maarfi.Template.Core.UserAggregate.User]] GetUserById(System.String) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-04-17 16:21:48.927 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 16:21:49.122 +02:00 [INF] Executed DbCommand (175ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[Username]
+FROM [admin].[com_users] AS [c]
+WHERE [c].[Id] = @__p_0
+2022-04-17 16:21:49.210 +02:00 [INF] Executing ObjectResult, writing value of type 'Net.Ysolution.Admin.Web.ApiModels.GenericVM`1[[Net.Ysolution.Maarfi.Template.Core.UserAggregate.User, Net.Ysolution.Maarfi.Template.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-04-17 16:21:49.220 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 296.0246ms
+2022-04-17 16:21:49.222 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 16:21:49.224 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/api/User?userId=5 - - - 200 178 application/json;+charset=utf-8 312.5278ms

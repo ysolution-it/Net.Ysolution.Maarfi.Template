@@ -1,0 +1,28 @@
+2022-04-17 01:18:59.781 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 01:18:59.961 +02:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 01:19:00.109 +02:00 [INF] Executed DbCommand (147ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 01:19:00.256 +02:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 01:19:00.405 +02:00 [INF] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 01:19:00.555 +02:00 [INF] Executed DbCommand (145ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-04-17 01:19:00.564 +02:00 [INF] No migrations were applied. The database is already up to date.
+2022-04-17 14:21:13.947 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 14:21:17.352 +02:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 14:21:17.556 +02:00 [INF] Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 14:21:17.725 +02:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 14:21:17.884 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 14:21:18.093 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-04-17 14:21:18.147 +02:00 [INF] No migrations were applied. The database is already up to date.

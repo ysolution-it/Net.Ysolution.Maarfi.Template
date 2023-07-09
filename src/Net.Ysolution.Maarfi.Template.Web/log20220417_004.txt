@@ -1,0 +1,120 @@
+2022-04-17 14:21:19.525 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 14:21:19.707 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 14:21:19.879 +02:00 [INF] Executed DbCommand (168ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2022-04-17 14:21:20.046 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 14:21:20.775 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [admin].[ToDoItems] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-04-17 14:21:21.016 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Changed], [p].[Changer], [p].[Created], [p].[Creator], [p].[Name], [p].[Priority]
+FROM [admin].[Projects] AS [p]
+2022-04-17 14:21:21.191 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Changed], [t].[Changer], [t].[Created], [t].[Creator], [t].[Description], [t].[IsDone], [t].[ProjectId], [t].[Title]
+FROM [admin].[ToDoItems] AS [t]
+2022-04-17 14:21:30.396 +02:00 [INF] Executed DbCommand (274ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 100), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [admin].[Projects] ([Changed], [Changer], [Created], [Creator], [Name], [Priority])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [admin].[Projects]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-04-17 14:21:30.663 +02:00 [INF] Executed DbCommand (206ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [admin].[ToDoItems] ([Changed], [Changer], [Created], [Creator], [Description], [IsDone], [ProjectId], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [admin].[ToDoItems]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-04-17 14:21:30.863 +02:00 [INF] Executed DbCommand (193ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [admin].[ToDoItems] ([Changed], [Changer], [Created], [Creator], [Description], [IsDone], [ProjectId], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [admin].[ToDoItems]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-04-17 14:21:31.039 +02:00 [INF] Executed DbCommand (163ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [admin].[ToDoItems] ([Changed], [Changer], [Created], [Creator], [Description], [IsDone], [ProjectId], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [admin].[ToDoItems]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-04-17 14:21:31.391 +02:00 [INF] User profile is available. Using 'C:\Users\KhaledFathy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-17 14:21:31.837 +02:00 [INF] Now listening on: http://localhost:57679
+2022-04-17 14:21:31.843 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-17 14:21:31.845 +02:00 [INF] Hosting environment: Development
+2022-04-17 14:21:31.846 +02:00 [INF] Content root path: G:\source\maarfi\backend\Net.Ysolution.Maarfi\Modules\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-04-17 14:21:32.986 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-04-17 14:21:33.889 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 912.3310ms
+2022-04-17 14:21:33.965 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-04-17 14:21:33.972 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 6.5217ms
+2022-04-17 14:21:34.364 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-04-17 14:21:34.658 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 293.3506ms
+2022-04-17 14:21:50.641 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/api/User?userId=5 - -
+2022-04-17 14:21:50.698 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-04-17 14:21:50.705 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 14:21:50.765 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Net.Ysolution.Maarfi.Template.Core.UserAggregate.User] GetUserById(System.String) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-04-17 14:21:50.828 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 14:21:51.064 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 289.348ms
+2022-04-17 14:21:51.068 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 14:21:51.071 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'User', which does not match the property type of 'string'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.GetByIdAsync[TId](TId id, CancellationToken cancellationToken)
+   at Net.Ysolution.Maarfi.Template.Core.Services.UserService.GetUserByIdAsync(String userId) in G:\source\maarfi\backend\Net.Ysolution.Maarfi\Modules\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Core\Services\UserService.cs:line 23
+   at Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById(String userId) in G:\source\maarfi\backend\Net.Ysolution.Maarfi\Modules\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\Api\UserController.cs:line 23
+   at lambda_method604(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-17 14:21:51.411 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/api/User?userId=5 - - - 500 - text/plain;+charset=utf-8 769.8509ms
+2022-04-17 14:23:14.068 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 14:23:15.698 +02:00 [INF] Executed DbCommand (186ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 14:23:15.911 +02:00 [INF] Executed DbCommand (190ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 14:23:16.064 +02:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 14:23:16.213 +02:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 14:23:16.412 +02:00 [INF] Executed DbCommand (149ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-04-17 14:23:16.441 +02:00 [INF] No migrations were applied. The database is already up to date.

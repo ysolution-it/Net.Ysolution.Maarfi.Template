@@ -1,0 +1,104 @@
+2022-04-17 15:45:01.295 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 15:45:01.464 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 15:45:01.629 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2022-04-17 15:45:01.900 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 15:45:03.874 +02:00 [INF] Executed DbCommand (152ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [admin].[ToDoItems] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-04-17 15:45:04.110 +02:00 [INF] User profile is available. Using 'C:\Users\KhaledFathy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-17 15:45:05.187 +02:00 [INF] Now listening on: http://localhost:57679
+2022-04-17 15:45:05.216 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-17 15:45:05.218 +02:00 [INF] Hosting environment: Development
+2022-04-17 15:45:05.222 +02:00 [INF] Content root path: G:\source\maarfi\backend\Net.Ysolution.Maarfi\Modules\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-04-17 15:45:06.584 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-04-17 15:45:07.460 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 896.7048ms
+2022-04-17 15:45:07.551 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-04-17 15:45:07.562 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 10.7932ms
+2022-04-17 15:45:08.998 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-04-17 15:45:09.759 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 761.2344ms
+2022-04-17 15:46:34.212 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/api/User - -
+2022-04-17 15:46:34.263 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-04-17 15:46:34.272 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 15:46:34.325 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Net.Ysolution.Admin.Web.ApiModels.GenericVM`1[Net.Ysolution.Maarfi.Template.Core.UserAggregate.User]] GetUserById(System.String) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-04-17 15:46:34.361 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 24.4975ms
+2022-04-17 15:46:34.366 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 15:46:34.370 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Net.YSolution.MessagesTube.IMessageList' while attempting to activate 'Net.Ysolution.Maarfi.Template.Web.Api.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method457(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-17 15:46:34.560 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/api/User - - - 500 - text/plain;+charset=utf-8 348.5156ms
+2022-04-17 15:46:38.748 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/api/User?userId=543534 - -
+2022-04-17 15:46:38.750 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 15:46:38.752 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Net.Ysolution.Admin.Web.ApiModels.GenericVM`1[Net.Ysolution.Maarfi.Template.Core.UserAggregate.User]] GetUserById(System.String) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-04-17 15:46:38.758 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 1.6045ms
+2022-04-17 15:46:38.764 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-04-17 15:46:38.766 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Net.YSolution.MessagesTube.IMessageList' while attempting to activate 'Net.Ysolution.Maarfi.Template.Web.Api.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method457(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-17 15:46:38.781 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/api/User?userId=543534 - - - 500 - text/plain;+charset=utf-8 33.6694ms
+2022-04-17 15:52:44.944 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 15:53:42.269 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-04-17 15:53:44.130 +02:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 15:53:44.344 +02:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 15:53:44.504 +02:00 [INF] Executed DbCommand (154ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-04-17 15:53:44.662 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-04-17 15:53:44.869 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-04-17 15:53:44.910 +02:00 [INF] No migrations were applied. The database is already up to date.

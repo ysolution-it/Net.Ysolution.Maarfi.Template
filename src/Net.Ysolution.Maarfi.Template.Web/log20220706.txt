@@ -1,0 +1,103 @@
+2022-07-06 16:22:57.976 +02:00 [INF] Now listening on: http://localhost:57679
+2022-07-06 16:22:58.034 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 16:22:58.036 +02:00 [INF] Hosting environment: Development
+2022-07-06 16:22:58.037 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-07-06 16:22:58.962 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-07-06 16:22:59.430 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 470.6400ms
+2022-07-06 16:22:59.440 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 16:22:59.445 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 5.1456ms
+2022-07-06 16:22:59.506 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-07-06 16:22:59.630 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 123.8544ms
+2022-07-06 16:23:00.000 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-07-06 16:23:00.847 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 847.3549ms
+2022-07-06 16:25:22.685 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - -
+2022-07-06 16:25:22.734 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-07-06 16:25:22.756 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 16:25:22.816 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ardalis.Result.Result`1[System.Collections.Generic.List`1[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto]]] GetUserById(System.Guid) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-07-06 16:25:24.546 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ModuleReadContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-07-06 16:25:35.471 +02:00 [INF] Executed DbCommand (236ms) [Parameters=[p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+
+            select u.id  Id, first_name FirstName, last_name LastName , u.username Username, Email , r.id RoleId ,   r.arabic_name RoleArabicName 
+              ,  r.english_name RoleEnglishName , u.id UserId from com_users u
+              inner join com_user_roles ur on(u.id = ur.user_id) 
+              inner join com_roles r on (ur.role_id = r.id )
+              where u.id =  @p0
+2022-07-06 16:25:35.500 +02:00 [INF] Executing ObjectResult, writing value of type 'Ardalis.Result.Result`1[[System.Collections.Generic.List`1[[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto, Net.Ysolution.Maarfi.Shared.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-06 16:25:35.532 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 12707.0705ms
+2022-07-06 16:25:35.534 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 16:25:35.538 +02:00 [INF] HTTP GET /admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 responded 200 in 12792.4312 ms
+2022-07-06 16:25:35.545 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - - - 200 598 application/json;+charset=utf-8 12860.3590ms
+2022-07-06 16:29:03.690 +02:00 [INF] Now listening on: http://localhost:57679
+2022-07-06 16:29:03.735 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 16:29:03.737 +02:00 [INF] Hosting environment: Development
+2022-07-06 16:29:03.738 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-07-06 16:29:04.288 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-07-06 16:29:04.530 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 247.2172ms
+2022-07-06 16:29:04.544 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-07-06 16:29:04.547 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 16:29:04.551 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 4.1414ms
+2022-07-06 16:29:04.587 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.0355ms
+2022-07-06 16:29:04.875 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-07-06 16:29:05.254 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 378.9171ms
+2022-07-06 16:29:15.343 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - -
+2022-07-06 16:29:15.353 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-07-06 16:29:15.366 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 16:29:15.389 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ardalis.Result.Result`1[System.Collections.Generic.List`1[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto]]] GetUserById(System.Guid) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-07-06 16:29:16.220 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ModuleReadContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-07-06 16:29:16.503 +02:00 [ERR] The expression 'p.UserRoles' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+2022-07-06 16:29:16.524 +02:00 [INF] Executing ObjectResult, writing value of type 'Ardalis.Result.Result`1[[System.Collections.Generic.List`1[[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto, Net.Ysolution.Maarfi.Shared.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-06 16:29:16.558 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 1159.8765ms
+2022-07-06 16:29:16.562 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 16:29:16.567 +02:00 [INF] HTTP GET /admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 responded 200 in 1206.1628 ms
+2022-07-06 16:29:16.574 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - - - 200 131 application/json;+charset=utf-8 1231.7048ms
+2022-07-06 16:35:12.937 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - -
+2022-07-06 16:35:12.944 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 16:35:12.945 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ardalis.Result.Result`1[System.Collections.Generic.List`1[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto]]] GetUserById(System.Guid) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-07-06 16:35:12.991 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ModuleReadContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-07-06 18:34:27.103 +02:00 [INF] Now listening on: http://localhost:57679
+2022-07-06 18:34:27.182 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 18:34:27.184 +02:00 [INF] Hosting environment: Development
+2022-07-06 18:34:27.186 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-07-06 18:34:28.454 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-07-06 18:34:28.787 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 339.5929ms
+2022-07-06 18:34:28.829 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-07-06 18:34:28.836 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 18:34:28.839 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 2.8209ms
+2022-07-06 18:34:28.861 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.2007ms
+2022-07-06 18:34:28.992 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-07-06 18:34:29.263 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 271.1149ms
+2022-07-06 18:35:02.888 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - -
+2022-07-06 18:35:02.903 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-07-06 18:35:02.916 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 18:35:02.943 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ardalis.Result.Result`1[System.Collections.Generic.List`1[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto]]] GetUserById(System.Guid) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-07-06 18:35:06.069 +02:00 [ERR] The keyless entity type 'UserDto' cannot be on the principal end of the relationship between 'UserDto.UserRoles' and 'UserRolesDto'. The principal entity type must have a key.
+2022-07-06 18:35:06.085 +02:00 [INF] Executing ObjectResult, writing value of type 'Ardalis.Result.Result`1[[System.Collections.Generic.List`1[[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto, Net.Ysolution.Maarfi.Shared.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-06 18:35:06.115 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 3162.8293ms
+2022-07-06 18:35:06.121 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 18:35:06.125 +02:00 [INF] HTTP GET /admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 responded 200 in 3215.0250 ms
+2022-07-06 18:35:06.130 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - - - 200 131 application/json;+charset=utf-8 3241.7490ms
+2022-07-06 18:35:11.568 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - -
+2022-07-06 18:35:11.579 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 18:35:11.581 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ardalis.Result.Result`1[System.Collections.Generic.List`1[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto]]] GetUserById(System.Guid) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-07-06 18:39:14.927 +02:00 [INF] Now listening on: http://localhost:57679
+2022-07-06 18:39:14.966 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-06 18:39:14.968 +02:00 [INF] Hosting environment: Development
+2022-07-06 18:39:14.969 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-07-06 18:39:15.779 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-07-06 18:39:16.062 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 286.2059ms
+2022-07-06 18:39:16.077 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-07-06 18:39:16.085 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-07-06 18:39:16.097 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 9.2913ms
+2022-07-06 18:39:16.110 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.4564ms
+2022-07-06 18:39:16.371 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-07-06 18:39:16.877 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 506.1118ms
+2022-07-06 18:39:31.256 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - -
+2022-07-06 18:39:31.272 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-07-06 18:39:31.286 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 18:39:31.319 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ardalis.Result.Result`1[System.Collections.Generic.List`1[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto]]] GetUserById(System.Guid) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-07-06 18:41:02.052 +02:00 [ERR] The keyless entity type 'UserDto' cannot be on the principal end of the relationship between 'UserDto.UserRoles' and 'UserRolesDto'. The principal entity type must have a key.
+2022-07-06 18:41:02.090 +02:00 [INF] Executing ObjectResult, writing value of type 'Ardalis.Result.Result`1[[System.Collections.Generic.List`1[[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto, Net.Ysolution.Maarfi.Shared.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-06 18:41:02.139 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 90812.0834ms
+2022-07-06 18:41:02.144 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-06 18:41:02.149 +02:00 [INF] HTTP GET /admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 responded 200 in 90868.6264 ms
+2022-07-06 18:41:02.158 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/4e7b794e-d1a6-48b7-9851-07744774bcf5 - - - 200 131 application/json;+charset=utf-8 90902.7850ms

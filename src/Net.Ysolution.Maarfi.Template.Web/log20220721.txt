@@ -1,0 +1,50 @@
+2022-07-21 12:39:42.066 +02:00 [INF] Now listening on: http://localhost:57679
+2022-07-21 12:39:42.116 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-21 12:39:42.118 +02:00 [INF] Hosting environment: Development
+2022-07-21 12:39:42.119 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-07-21 12:39:47.355 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-07-21 12:39:47.814 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - -
+2022-07-21 12:39:47.831 +02:00 [INF] The file /swagger-ui.css was not modified
+2022-07-21 12:39:47.838 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui.css - - - 304 - text/css 19.0061ms
+2022-07-21 12:39:47.838 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 480.1438ms
+2022-07-21 12:39:47.845 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-07-21 12:39:47.857 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-07-21 12:39:47.911 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 57.9587ms
+2022-07-21 12:39:47.911 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-standalone-preset.js - -
+2022-07-21 12:39:47.911 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-bundle.js - -
+2022-07-21 12:39:47.914 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2022-07-21 12:39:47.914 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2022-07-21 12:39:47.916 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 4.4830ms
+2022-07-21 12:39:47.916 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 5.3198ms
+2022-07-21 12:39:47.990 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 144.6464ms
+2022-07-21 12:39:48.212 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-07-21 12:39:48.384 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/favicon-32x32.png - -
+2022-07-21 12:39:48.393 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-07-21 12:39:48.394 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/favicon-32x32.png - - - 200 628 image/png 10.1959ms
+2022-07-21 12:39:48.673 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 461.6638ms
+2022-07-21 12:40:15.270 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/3fa85f64-5717-4562-b3fc-2c963f66afa6 - -
+2022-07-21 12:40:15.287 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-07-21 12:40:15.310 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-21 12:40:15.348 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ardalis.Result.Result`1[System.Collections.Generic.List`1[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto]]] GetUserById(System.Guid) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-07-21 17:00:36.631 +02:00 [INF] Now listening on: http://localhost:57679
+2022-07-21 17:00:36.737 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-21 17:00:36.740 +02:00 [INF] Hosting environment: Development
+2022-07-21 17:00:36.741 +02:00 [INF] Content root path: H:\Maarfi-all\Net.Ysolution.Maarfi.Template\src\Net.Ysolution.Maarfi.Template.Web\
+2022-07-21 17:00:37.276 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/index.html - -
+2022-07-21 17:00:37.568 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/index.html - - - 200 - text/html;charset=utf-8 292.6779ms
+2022-07-21 17:00:37.581 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_vs/browserLink - -
+2022-07-21 17:00:37.625 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - -
+2022-07-21 17:00:37.629 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 4.5745ms
+2022-07-21 17:00:37.641 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.8553ms
+2022-07-21 17:00:37.949 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - -
+2022-07-21 17:00:38.347 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 398.1636ms
+2022-07-21 17:00:49.918 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/3fa85f64-5717-4562-b3fc-2c963f66afa6 - -
+2022-07-21 17:00:49.931 +02:00 [WRN] Failed to determine the https port for redirect.
+2022-07-21 17:00:49.942 +02:00 [INF] Executing endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-21 17:00:49.969 +02:00 [INF] Route matched with {action = "GetUserById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ardalis.Result.Result`1[System.Collections.Generic.List`1[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto]]] GetUserById(System.Guid) on controller Net.Ysolution.Maarfi.Template.Web.Api.UserController (Net.Ysolution.Maarfi.Template.Web).
+2022-07-21 17:01:04.300 +02:00 [ERR] The keyless entity type 'UserDto' cannot be on the principal end of the relationship between 'UserDto.UserRoles' and 'UserRolesDto'. The principal entity type must have a key.
+2022-07-21 17:01:04.348 +02:00 [INF] Executing ObjectResult, writing value of type 'Ardalis.Result.Result`1[[System.Collections.Generic.List`1[[Net.Ysolution.Maarfi.Shared.Models.Dto.UserDto, Net.Ysolution.Maarfi.Shared.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-21 17:01:04.397 +02:00 [INF] Executed action Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web) in 14421.7623ms
+2022-07-21 17:01:04.401 +02:00 [INF] Executed endpoint 'Net.Ysolution.Maarfi.Template.Web.Api.UserController.GetUserById (Net.Ysolution.Maarfi.Template.Web)'
+2022-07-21 17:01:04.405 +02:00 [INF] HTTP GET /admin/User/GetUserById/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 200 in 14466.7170 ms
+2022-07-21 17:01:04.412 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:57679/admin/User/GetUserById/3fa85f64-5717-4562-b3fc-2c963f66afa6 - - - 200 131 application/json;+charset=utf-8 14493.7894ms

@@ -1,0 +1,414 @@
+2022-05-04 20:29:27.408 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 20:32:04.991 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 20:32:11.991 +02:00 [INF] Executed DbCommand (247ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 20:32:12.399 +02:00 [INF] Executed DbCommand (246ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 20:32:12.574 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 20:32:12.721 +02:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 20:32:12.979 +02:00 [INF] Executed DbCommand (154ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 20:32:13.149 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 20:32:14.111 +02:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 20:32:14.284 +02:00 [ERR] Failed executing DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 20:57:09.591 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 20:57:16.672 +02:00 [INF] Executed DbCommand (451ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 20:57:17.312 +02:00 [INF] Executed DbCommand (384ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 20:57:17.489 +02:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 20:57:17.646 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 20:57:17.971 +02:00 [INF] Executed DbCommand (188ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 20:57:18.318 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 20:57:20.378 +02:00 [INF] Executed DbCommand (166ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 20:57:20.545 +02:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 20:57:20.710 +02:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 20:57:20.885 +02:00 [ERR] Failed executing DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[com_users] DROP CONSTRAINT [PK_com_users];
+2022-05-04 21:02:06.928 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 21:02:11.430 +02:00 [INF] Executed DbCommand (289ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:02:11.855 +02:00 [INF] Executed DbCommand (250ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:02:12.045 +02:00 [INF] Executed DbCommand (173ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:02:12.198 +02:00 [INF] Executed DbCommand (152ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:02:12.467 +02:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 21:02:12.581 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 21:02:13.702 +02:00 [INF] Executed DbCommand (178ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 21:02:13.873 +02:00 [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 21:02:14.029 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 21:02:14.203 +02:00 [ERR] Failed executing DbCommand (170ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[com_users] DROP CONSTRAINT [PK_com_users];
+2022-05-04 21:32:48.994 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 21:32:51.072 +02:00 [INF] Executed DbCommand (196ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:32:51.304 +02:00 [INF] Executed DbCommand (191ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:32:51.480 +02:00 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:32:51.633 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:32:51.827 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 21:32:51.871 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 21:32:52.460 +02:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 21:32:52.626 +02:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 21:32:52.809 +02:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 21:32:52.974 +02:00 [ERR] Failed executing DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[com_users] DROP CONSTRAINT [PK_com_users];
+2022-05-04 21:34:52.974 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 21:34:55.644 +02:00 [INF] Executed DbCommand (237ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:34:55.960 +02:00 [INF] Executed DbCommand (233ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:34:56.125 +02:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:34:56.279 +02:00 [INF] Executed DbCommand (154ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:34:56.500 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 21:34:56.578 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 21:34:57.317 +02:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 21:34:57.497 +02:00 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 21:34:57.663 +02:00 [INF] Executed DbCommand (166ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 21:34:57.828 +02:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[ToDoItems];
+2022-05-04 21:34:58.009 +02:00 [INF] Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[Projects];
+2022-05-04 21:34:58.170 +02:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[com_users];
+2022-05-04 21:34:58.613 +02:00 [INF] Executed DbCommand (442ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Creator]', N'creator', N'COLUMN';
+2022-05-04 21:34:58.788 +02:00 [INF] Executed DbCommand (175ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Created]', N'created', N'COLUMN';
+2022-05-04 21:34:58.951 +02:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Changer]', N'changer', N'COLUMN';
+2022-05-04 21:34:59.119 +02:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Changed]', N'changed', N'COLUMN';
+2022-05-04 21:34:59.284 +02:00 [INF] Executed DbCommand (165ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Creator]', N'creator', N'COLUMN';
+2022-05-04 21:34:59.450 +02:00 [INF] Executed DbCommand (166ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Created]', N'created', N'COLUMN';
+2022-05-04 21:34:59.618 +02:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Changer]', N'changer', N'COLUMN';
+2022-05-04 21:34:59.777 +02:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Changed]', N'changed', N'COLUMN';
+2022-05-04 21:34:59.938 +02:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [changed] datetime2 NULL;
+2022-05-04 21:35:00.156 +02:00 [INF] Executed DbCommand (218ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [changer] nvarchar(max) NULL;
+2022-05-04 21:35:00.328 +02:00 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [created] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2022-05-04 21:35:00.492 +02:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [creator] nvarchar(max) NOT NULL DEFAULT N'';
+2022-05-04 21:35:00.661 +02:00 [INF] Executed DbCommand (168ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[ToDoItems] ADD CONSTRAINT [id] PRIMARY KEY ([Id]);
+2022-05-04 21:35:00.846 +02:00 [ERR] Failed executing DbCommand (182ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[Projects] ADD CONSTRAINT [id] PRIMARY KEY ([Id]);
+2022-05-04 21:36:30.198 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 21:36:32.739 +02:00 [INF] Executed DbCommand (243ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:36:33.013 +02:00 [INF] Executed DbCommand (216ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:36:33.178 +02:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:36:33.332 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:36:33.531 +02:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 21:36:33.589 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 21:36:34.335 +02:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 21:36:34.496 +02:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 21:36:34.654 +02:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 21:36:34.810 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[ToDoItems];
+2022-05-04 21:36:34.965 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[Projects];
+2022-05-04 21:36:35.122 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[com_users];
+2022-05-04 21:36:35.284 +02:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Creator]', N'creator', N'COLUMN';
+2022-05-04 21:36:35.451 +02:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Created]', N'created', N'COLUMN';
+2022-05-04 21:36:35.607 +02:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Changer]', N'changer', N'COLUMN';
+2022-05-04 21:36:35.763 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Changed]', N'changed', N'COLUMN';
+2022-05-04 21:36:35.918 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Creator]', N'creator', N'COLUMN';
+2022-05-04 21:36:36.074 +02:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Created]', N'created', N'COLUMN';
+2022-05-04 21:36:36.231 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Changer]', N'changer', N'COLUMN';
+2022-05-04 21:36:36.387 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Changed]', N'changed', N'COLUMN';
+2022-05-04 21:36:36.542 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [changed] datetime2 NULL;
+2022-05-04 21:36:36.698 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [changer] nvarchar(max) NULL;
+2022-05-04 21:36:36.857 +02:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [created] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2022-05-04 21:36:37.015 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [creator] nvarchar(max) NOT NULL DEFAULT N'';
+2022-05-04 21:36:37.175 +02:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [dbo].[com_roles] (
+    [Id] nvarchar(450) NOT NULL,
+    [ArabicName] nvarchar(100) NOT NULL,
+    [EnglishName] nvarchar(100) NOT NULL,
+    [creator] nvarchar(max) NOT NULL,
+    [created] datetime2 NOT NULL,
+    [changer] nvarchar(max) NULL,
+    [changed] datetime2 NULL,
+    CONSTRAINT [id] PRIMARY KEY ([Id])
+);
+2022-05-04 21:36:37.358 +02:00 [ERR] Failed executing DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [dbo].[com_user_roles] (
+    [Id] int NOT NULL IDENTITY,
+    [role_id] nvarchar(450) NOT NULL,
+    [user_id] nvarchar(450) NOT NULL,
+    [creator] nvarchar(max) NOT NULL,
+    [created] datetime2 NOT NULL,
+    [changer] nvarchar(max) NULL,
+    [changed] datetime2 NULL,
+    CONSTRAINT [id] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_com_user_roles_com_roles_role_id] FOREIGN KEY ([role_id]) REFERENCES [dbo].[com_roles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_com_user_roles_com_users_user_id] FOREIGN KEY ([user_id]) REFERENCES [dbo].[com_users] ([Id]) ON DELETE CASCADE
+);
+2022-05-04 21:39:10.419 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 21:39:13.407 +02:00 [INF] Executed DbCommand (244ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:39:13.766 +02:00 [INF] Executed DbCommand (265ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:39:13.929 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:39:14.105 +02:00 [INF] Executed DbCommand (175ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:39:14.311 +02:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 21:39:14.373 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 21:39:15.172 +02:00 [INF] Executed DbCommand (213ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 21:39:15.334 +02:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 21:39:15.492 +02:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 21:39:15.667 +02:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[ToDoItems];
+2022-05-04 21:39:15.878 +02:00 [INF] Executed DbCommand (210ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[Projects];
+2022-05-04 21:39:16.046 +02:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[com_users];
+2022-05-04 21:39:16.267 +02:00 [INF] Executed DbCommand (221ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Creator]', N'creator', N'COLUMN';
+2022-05-04 21:39:16.426 +02:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Created]', N'created', N'COLUMN';
+2022-05-04 21:39:16.700 +02:00 [INF] Executed DbCommand (273ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Changer]', N'changer', N'COLUMN';
+2022-05-04 21:39:16.895 +02:00 [INF] Executed DbCommand (195ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Changed]', N'changed', N'COLUMN';
+2022-05-04 21:39:17.085 +02:00 [INF] Executed DbCommand (189ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Creator]', N'creator', N'COLUMN';
+2022-05-04 21:39:17.260 +02:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Created]', N'created', N'COLUMN';
+2022-05-04 21:39:17.449 +02:00 [INF] Executed DbCommand (189ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Changer]', N'changer', N'COLUMN';
+2022-05-04 21:39:17.605 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Changed]', N'changed', N'COLUMN';
+2022-05-04 21:39:17.759 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [changed] datetime2 NULL;
+2022-05-04 21:39:17.912 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [changer] nvarchar(max) NULL;
+2022-05-04 21:39:18.098 +02:00 [INF] Executed DbCommand (186ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [created] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2022-05-04 21:39:18.258 +02:00 [INF] Executed DbCommand (160ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [creator] nvarchar(max) NOT NULL DEFAULT N'';
+2022-05-04 21:39:18.417 +02:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [dbo].[com_roles] (
+    [Id] nvarchar(450) NOT NULL,
+    [ArabicName] nvarchar(100) NOT NULL,
+    [EnglishName] nvarchar(100) NOT NULL,
+    [creator] nvarchar(max) NOT NULL,
+    [created] datetime2 NOT NULL,
+    [changer] nvarchar(max) NULL,
+    [changed] datetime2 NULL,
+    CONSTRAINT [com_roles_id] PRIMARY KEY ([Id])
+);
+2022-05-04 21:39:18.600 +02:00 [ERR] Failed executing DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [dbo].[com_user_roles] (
+    [Id] int NOT NULL IDENTITY,
+    [role_id] nvarchar(450) NOT NULL,
+    [user_id] nvarchar(450) NOT NULL,
+    [creator] nvarchar(max) NOT NULL,
+    [created] datetime2 NOT NULL,
+    [changer] nvarchar(max) NULL,
+    [changed] datetime2 NULL,
+    CONSTRAINT [com_user_roles_id] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_com_user_roles_com_roles_role_id] FOREIGN KEY ([role_id]) REFERENCES [dbo].[com_roles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_com_user_roles_com_users_user_id] FOREIGN KEY ([user_id]) REFERENCES [dbo].[com_users] ([Id]) ON DELETE CASCADE
+);
+2022-05-04 21:43:09.866 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 21:43:12.335 +02:00 [INF] Executed DbCommand (241ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:43:12.613 +02:00 [INF] Executed DbCommand (203ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:43:12.775 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:43:12.928 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:43:13.140 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 21:43:13.204 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 21:43:13.963 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 21:43:14.123 +02:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 21:43:14.284 +02:00 [INF] Executed DbCommand (160ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 21:43:14.443 +02:00 [ERR] Failed executing DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_user] ADD CONSTRAINT [com_user_id] PRIMARY KEY ([id]);
+2022-05-04 21:44:18.291 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 21:44:20.201 +02:00 [INF] Executed DbCommand (195ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:44:20.412 +02:00 [INF] Executed DbCommand (178ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:44:20.572 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:44:20.726 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:44:20.922 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 21:44:20.967 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 21:44:21.517 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 21:44:21.678 +02:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 21:44:21.836 +02:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 21:44:21.995 +02:00 [ERR] Failed executing DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[com_user] ADD CONSTRAINT [com_user_id] PRIMARY KEY ([id]);
+2022-05-04 21:45:19.394 +02:00 [INF] Entity Framework Core 6.0.3 initialized 'ModuleDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: MigrationsAssembly=Net.Ysolution.Maarfi.Template.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-05-04 21:45:22.148 +02:00 [INF] Executed DbCommand (301ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:45:22.442 +02:00 [INF] Executed DbCommand (208ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:45:22.602 +02:00 [INF] Executed DbCommand (154ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-05-04 21:45:22.751 +02:00 [INF] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-04 21:45:22.977 +02:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-04 21:45:23.049 +02:00 [INF] Applying migration '20220504182929_migration2'.
+2022-05-04 21:45:23.795 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [FK_ToDoItems_Projects_ProjectId];
+2022-05-04 21:45:23.950 +02:00 [INF] Executed DbCommand (154ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[ToDoItems] DROP CONSTRAINT [PK_ToDoItems];
+2022-05-04 21:45:24.103 +02:00 [INF] Executed DbCommand (152ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[Projects] DROP CONSTRAINT [PK_Projects];
+2022-05-04 21:45:24.258 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [admin].[com_users] ADD CONSTRAINT [com_user_id] PRIMARY KEY ([id]);
+2022-05-04 21:45:24.409 +02:00 [INF] Executed DbCommand (150ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[ToDoItems];
+2022-05-04 21:45:24.565 +02:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[Projects];
+2022-05-04 21:45:24.731 +02:00 [INF] Executed DbCommand (165ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER SCHEMA [dbo] TRANSFER [admin].[com_users];
+2022-05-04 21:45:24.896 +02:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Creator]', N'creator', N'COLUMN';
+2022-05-04 21:45:25.048 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Created]', N'created', N'COLUMN';
+2022-05-04 21:45:25.200 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Changer]', N'changer', N'COLUMN';
+2022-05-04 21:45:25.387 +02:00 [INF] Executed DbCommand (187ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[ToDoItems].[Changed]', N'changed', N'COLUMN';
+2022-05-04 21:45:25.539 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Creator]', N'creator', N'COLUMN';
+2022-05-04 21:45:25.690 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Created]', N'created', N'COLUMN';
+2022-05-04 21:45:25.914 +02:00 [INF] Executed DbCommand (223ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Changer]', N'changer', N'COLUMN';
+2022-05-04 21:45:26.085 +02:00 [INF] Executed DbCommand (171ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[dbo].[Projects].[Changed]', N'changed', N'COLUMN';
+2022-05-04 21:45:26.287 +02:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [changed] datetime2 NULL;
+2022-05-04 21:45:26.438 +02:00 [INF] Executed DbCommand (151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [changer] nvarchar(max) NULL;
+2022-05-04 21:45:26.646 +02:00 [INF] Executed DbCommand (207ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [created] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2022-05-04 21:45:27.289 +02:00 [INF] Executed DbCommand (643ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [dbo].[com_users] ADD [creator] nvarchar(max) NOT NULL DEFAULT N'';
+2022-05-04 21:45:27.444 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [dbo].[com_roles] (
+    [Id] nvarchar(450) NOT NULL,
+    [ArabicName] nvarchar(100) NOT NULL,
+    [EnglishName] nvarchar(100) NOT NULL,
+    [creator] nvarchar(max) NOT NULL,
+    [created] datetime2 NOT NULL,
+    [changer] nvarchar(max) NULL,
+    [changed] datetime2 NULL,
+    CONSTRAINT [com_roles_id] PRIMARY KEY ([Id])
+);
+2022-05-04 21:45:27.606 +02:00 [INF] Executed DbCommand (162ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [dbo].[com_user_roles] (
+    [Id] int NOT NULL IDENTITY,
+    [role_id] nvarchar(450) NOT NULL,
+    [user_id] nvarchar(450) NOT NULL,
+    [creator] nvarchar(max) NOT NULL,
+    [created] datetime2 NOT NULL,
+    [changer] nvarchar(max) NULL,
+    [changed] datetime2 NULL,
+    CONSTRAINT [com_user_roles_id] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_com_user_roles_com_roles_role_id] FOREIGN KEY ([role_id]) REFERENCES [dbo].[com_roles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_com_user_roles_com_users_user_id] FOREIGN KEY ([user_id]) REFERENCES [dbo].[com_users] ([Id]) ON DELETE CASCADE
+);
+2022-05-04 21:45:27.756 +02:00 [INF] Executed DbCommand (149ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_com_user_roles_role_id] ON [dbo].[com_user_roles] ([role_id]);
+2022-05-04 21:45:27.906 +02:00 [INF] Executed DbCommand (150ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_com_user_roles_user_id] ON [dbo].[com_user_roles] ([user_id]);
+2022-05-04 21:45:28.056 +02:00 [INF] Executed DbCommand (150ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220504182929_migration2', N'6.0.3');

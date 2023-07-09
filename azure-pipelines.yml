@@ -1,0 +1,81 @@
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+trigger:
+  - master
+  - develop
+
+pool:
+  name: Build-Machine
+
+variables:
+  ProjectName: 'Net.Ysolution.Maarfi.Template'
+  ProjectPath: '**/*.csproj'
+  buildConfiguration: 'Release'
+
+steps:
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet restore'
+    inputs:
+      command: 'restore'
+      projects: '$(ProjectPath)'
+      feedsToUse: 'select'
+      vstsFeed: 'db41c914-2d77-4cfa-9bfd-99d21dfa52b0/43e68984-d4ca-4261-b896-2e864e85fec6'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Build $(ProjectName)'
+    inputs:
+      command: 'build'
+      arguments: '--configuration $(buildConfiguration)'
+      projects: '$(ProjectPath)'
+
+
+  - task: NuGetToolInstaller@1
+    inputs:
+     versionSpec: 
+     checkLatest: true
+
+
+ # - task: NuGetCommand@2
+    #inputs:
+     # command: 'pack'
+    #  packagesToPack: 'src\Net.Ysolution.MultiTenant.Web\Net.Ysolution.MultiTenant.Web.csproj'
+   #   versioningScheme: 'byBuildNumber'
+  #    includeReferencedProjects: true
+ #     buildProperties: '-MSBuildVersion 17.1'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Pack $(ProjectName)'
+    inputs:
+      command: 'pack'
+      arguments: '--configuration $(buildConfiguration)'
+      packagesToPack: '$(ProjectPath)'
+      versioningScheme: 'byBuildNumber'
+  - task: NuGetCommand@2
+    displayName: 'Publish $(ProjectName)'
+    inputs:
+      command: push
+      feedsToUse: 'select'
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+      nuGetFeedType: 'internal'
+      publishVstsFeed: 'db41c914-2d77-4cfa-9bfd-99d21dfa52b0/43e68984-d4ca-4261-b896-2e864e85fec6'
+      versioningScheme: 'off'
+      allowPackageConflicts: true
+  - task: rvo-vsts-promotepackage-task@3
+    inputs:
+      feed: 'db41c914-2d77-4cfa-9bfd-99d21dfa52b0/43e68984-d4ca-4261-b896-2e864e85fec6'
+      inputType: 'packageFiles'
+      packagesDirectory: '$(Build.ArtifactStagingDirectory)'
+      packagesPattern: |
+        **/*.nupkg
+        !**/*.symbols.nupkg
+        **/*.tgz
+      releaseView: 'bb614529-2e01-485f-8749-57ce8ad805a3'
+  - task: rvo-vsts-promotepackage-task@3
+    inputs:
+      feed: 'db41c914-2d77-4cfa-9bfd-99d21dfa52b0/43e68984-d4ca-4261-b896-2e864e85fec6'
+      inputType: 'packageFiles'
+      packagesDirectory: '$(Build.ArtifactStagingDirectory)'
+      packagesPattern: |
+        **/*.nupkg
+        !**/*.symbols.nupkg
+        **/*.tgz
+      releaseView: '13954e83-d8e4-4024-8094-9343370e04a6'
